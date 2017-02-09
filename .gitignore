@@ -1,0 +1,68 @@
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+
+#Visual Studio files
+*.[Oo]bj
+*.user
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+
+*.ilk
+*.log
+*.lib
+*.sbr
+*.sdf
+*.dll
+*.opensdf
+ipch/
+obj/
+[Bb]in
+[Dd]ebug*/
+[Rr]elease*/
+Ankh.NoLoad
+[Pp]ublish[Pp]rofiles*/
+*.Publish.xml
+*.vsp
+*.psess
+
+#Node files
+node_modules/
+
+#Tooling
+_ReSharper*/
+*.resharper
+[Tt]est[Rr]esult*
+*.nuget
+*.ncrunchproject
+*.ncrunchsolution
+packages/
+
+#Project files
+[Bb]uild/
+
+#Subversion files
+.svn
+
+# Office Temp Files
+~$*
+/*.tmp
+
+# Arquivo JS gerado automaticamente
+/Jz.Nasa/0 - Presentation/JZ.Nasa.Presentation.Web/app/app.js
+/0 - Presentation/JZ.Nasa.Presentation.Web/app/app.js
+/0 - Presentation/JZ.Nasa.Presentation.Web/app/app.js.map
+/0 - Presentation/JZ.Nasa.Presentation.Web/app/app.js.map
+/0 - Presentation/JZ.Nasa.Presentation.Web/app/app.js
+/0 - Presentation/JZ.Nasa.Presentation.Web/app/app.js.map
+/0 - Presentation/JZ.Nasa.Presentation.Web/App_Data/Log_Mensagens_GCM.txt
+/1 - Services/JZ.Nasa.Services.WebAPI/App_Data/Log_Mensagens_GCM.txt
