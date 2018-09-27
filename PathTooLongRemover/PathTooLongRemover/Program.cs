@@ -11,15 +11,18 @@ namespace PathTooLongRemover
     {
         static void Main(string[] args)
         {
-            /*
-                var path = @"D:\workspace\MyFuckLongFolder";
-                var basePathToMoveLongDirAndFiles = @"D:\workspace\"; 
-             */
-            var path = args[0];
-            var basePathToMoveLongDirAndFiles = args[1];
+
+            var path = @"D:\workspace\Laboratorio\AngularJS_1.x_legacy\seed_oldd";
+            var basePathToMoveLongDirAndFiles = @"D:\Remover";
+
+            //var path = args[0];
+            //var basePathToMoveLongDirAndFiles = args[1];
+
+            if (!Directory.Exists(basePathToMoveLongDirAndFiles))
+                Directory.CreateDirectory(basePathToMoveLongDirAndFiles);
 
             Rename(path, basePathToMoveLongDirAndFiles);
-            Remove(path);
+            Remove(basePathToMoveLongDirAndFiles);
         }
 
         private static void Rename(string path, string basePath)
@@ -28,7 +31,8 @@ namespace PathTooLongRemover
             foreach (var file in files)
             {
                 var fileI = new FileInfo(file);
-                fileI.MoveTo(Path.Combine(basePath, RandomString(6)));
+                Console.WriteLine(fileI);
+                fileI.MoveTo(Path.Combine(basePath, RandomString(15)));
             }
 
             var dirs = Directory.GetDirectories(path);
@@ -53,6 +57,7 @@ namespace PathTooLongRemover
             var files = Directory.GetFiles(path);
             foreach (var file in files)
             {
+                Console.WriteLine(file);
                 File.Delete(file);
             }
 
@@ -61,6 +66,7 @@ namespace PathTooLongRemover
             {
 
                 Remove(dir);
+                Console.WriteLine(dir);
                 Directory.Delete(dir);
             }
         }
